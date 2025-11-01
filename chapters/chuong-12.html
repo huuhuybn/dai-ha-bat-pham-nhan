@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chương 12: Bài toán chia ruộng của Lý lý trưởng</title>
+  <meta name="description" content="Chương 12: Bài toán chia ruộng của Lý lý trưởng - Đại Hạ Bất Phàm Nhân." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.75; margin: 0; color: #0f172a; background: #f8fafc; }
+    header { background: #0ea5e9; color: white; padding: 24px 16px; }
+    header h1 { margin: 0; font-size: 26px; }
+    main { max-width: 820px; margin: 24px auto; padding: 0 16px 80px; background: white; border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    article { padding: 20px; }
+    h2 { margin-top: 0; font-size: 22px; color: #0f172a; }
+    p { margin: 14px 0; text-align: justify; }
+    nav { display: flex; justify-content: space-between; gap: 8px; padding: 16px 20px; border-top: 1px solid #e5e7eb; background: #f9fafb; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
+    a { color: #0ea5e9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .breadcrumbs { font-size: 14px; opacity: 0.9; margin-top: 8px; }
+  </style>
+  <link rel="prefetch" href="/Users/huynguyen/HuyStory/chapters/chuong-11.html" />
+</head>
+<body>
+  <header>
+    <h1>Đại Hạ Bất Phàm Nhân</h1>
+    <div class="breadcrumbs"><a href="../index.html">Trang chủ</a> › Chương 12</div>
+  </header>
+  <main>
+    <article>
+      <h2>Chương 12: Bài toán chia ruộng của Lý lý trưởng</h2>
+      <p>Khi Huy về đến Tân Thu, một vấn đề đang chờ anh: Lý lý trưởng của thôn Thượng Khê—thôn lớn nhất huyện—đến huyện nha nhờ giúp. Ông có một thửa ruộng lớn hình không đều, cần chia cho năm gia đình theo tỷ lệ khác nhau: nhà Lý được một phần ba, nhà Ngô được một phần tư, nhà Đỗ được một phần năm, nhà Vương được một phần sáu, còn lại cho nhà Trần.</p>
+      <p>“Vấn đề là,” Lý lý trưởng nói, mặt nhăn nhó, “ta đã thử chia bằng mắt, nhưng ai cũng bảo mình bị thiếu. Đã ba lần đổi cách chia, vẫn cãi nhau. Quan huyện bảo thầy giỏi tính, thầy giúp ta.”</p>
+      <p>Huy nhận ngay bài toán. Đây là một vấn đề phân số cổ điển, nhưng với hình dạng ruộng không đều, không thể chia đơn giản bằng diện tích. Anh cần một phương pháp chính xác và công bằng.</p>
+      <p>“Trước tiên, ta cần đo đạc chính xác,” Huy nói. “Sau đó tính tổng diện tích, rồi chia theo tỷ lệ.” Anh dẫn một nhóm đến thửa ruộng: A Sở, vài người thợ mộc biết dùng thước, và Lý lý trưởng cùng năm người đại diện các gia đình.</p>
+      <p>Thửa ruộng không vuông, không tròn, mà là một hình ngũ giác lệch, một góc nhọn, một góc tù, có một góc ruộng bị suối cắt ngang nên méo. Huy đứng trên một gò đất cao, quan sát toàn cảnh. Anh vẽ sơ đồ lên giấy, đánh dấu các điểm góc bằng ký hiệu: A, B, C, D, E.</p>
+      <p>“Chia hình phức tạp thành hình đơn giản,” Huy giảng cho bọn trẻ đi theo. “Ruộng này có thể chia thành một hình chữ nhật, hai hình tam giác, và một hình thang.” Anh chỉ tay: “Ta đo từng hình, tính diện tích từng phần, cộng lại là tổng.”</p>
+      <p>Công việc đo đạc bắt đầu. Huy dùng dây đo, cọc tre đánh dấu, và một phương pháp tam giác để kiểm tra: nếu ba cạnh của tam giác thỏa mãn một bất đẳng thức nhất định, thì tam giác đó hợp lệ. Anh dạy A Sở: “Đo hai lần, so sánh. Nếu khác nhau nhiều, đo lại. Độ chính xác quan trọng hơn tốc độ.”</p>
+      <p>Sau một ngày, Huy có được số liệu: tổng diện tích là một trăm hai mươi mẫu (theo đơn vị địa phương). Bây giờ là bài toán phân số: chia cho 1/3, 1/4, 1/5, 1/6, và phần còn lại.</p>
+      <p>Huy viết lên bảng: “Tổng = 1/3 + 1/4 + 1/5 + 1/6 + X”. Trong đó X là phần của nhà Trần. Anh quy đồng mẫu số: “Mẫu số chung là 60. 1/3 = 20/60, 1/4 = 15/60, 1/5 = 12/60, 1/6 = 10/60. Cộng lại: 20 + 15 + 12 + 10 = 57/60. Phần còn lại X = 3/60 = 1/20.”</p>
+      <p>Cả nhóm nhìn, một số hiểu, một số chưa. Huy vẽ lại bằng hình: một hình chữ nhật chia làm 60 ô nhỏ. Ô tô màu đỏ cho nhà Lý (20 ô), ô màu xanh cho nhà Ngô (15 ô), ô màu vàng cho nhà Đỗ (12 ô), ô màu tím cho nhà Vương (10 ô), ô màu trắng cho nhà Trần (3 ô). “Nhìn vào đây, ai cũng thấy rõ phần mình.”</p>
+      <p>Nhưng vấn đề thực sự không phải ở tính toán, mà ở việc chia trên ruộng thật. Ruộng không vuông, không thể chia đều bằng đường thẳng. Huy nghĩ đến phương pháp “chia theo giá trị”: không chia theo diện tích mà chia theo giá trị sử dụng, tính đến chất đất, vị trí gần nước, độ dốc.</p>
+      <p>“Không,” Lý lý trưởng lắc đầu khi nghe đề xuất. “Chia theo diện tích. Ai cũng hiểu.”</p>
+      <p>Huy quay lại với phương pháp khác: chia hình phức tạp thành các hình đơn giản, mỗi hình được chia theo tỷ lệ. Anh vẽ lại thửa ruộng trên giấy, chia thành năm phần bằng cách vẽ các đường từ trung tâm ra các góc. Mỗi phần có diện tích tương đương tỷ lệ cần thiết.</p>
+      <p>“Nhưng làm sao vẽ trên ruộng thật?” Một người hỏi. Huy cười: “Dùng dây và cọc. Ta sẽ đo từ trung tâm, vẽ các góc bằng cách tính toán tam giác.”</p>
+      <p>Công việc chia ruộng bắt đầu. Huy xác định trung tâm của ruộng bằng cách vẽ hai đường chéo (nếu là hình đều) hoặc tìm trọng tâm (nếu là hình lệch). Với hình ngũ giác lệch, anh dùng phương pháp gần đúng: chia ruộng thành nhiều tam giác nhỏ, tìm trọng tâm của từng tam giác, rồi tính trọng tâm tổng hợp.</p>
+      <p>Từ trung tâm, Huy vẽ năm tia ra ngoài, mỗi tia tương ứng với một gia đình. Góc giữa các tia được tính dựa trên tỷ lệ: nhà Lý có góc 120 độ (tương ứng 1/3), nhà Ngô có góc 90 độ (1/4), nhà Đỗ có góc 72 độ (1/5), nhà Vương có góc 60 độ (1/6), nhà Trần có góc 18 độ (1/20).</p>
+      <p>Để vẽ góc chính xác trên đất, Huy làm một “thước đo góc” đơn giản: một nửa vòng tròn bằng tre, chia thành 180 phần bằng vạch khắc. Dùng dây căng từ trung tâm, đặt thước đo góc, vẽ đúng góc cần thiết.</p>
+      <p>Khi các đường ranh giới đã vẽ xong, năm gia đình cùng đo lại. Họ dùng dây đo từ trung tâm đến mép ruộng ở nhiều điểm, tính diện tích từng phần bằng công thức tam giác. Kết quả: nhà Lý được 40 mẫu (đúng 1/3 của 120), nhà Ngô được 30 mẫu (1/4), nhà Đỗ được 24 mẫu (1/5), nhà Vương được 20 mẫu (1/6), nhà Trần được 6 mẫu (1/20). Tổng cộng đúng 120 mẫu.</p>
+      <p>Mọi người gật đầu. Không ai còn cãi nhau. Lý lý trưởng thở phào: “Cuối cùng cũng xong. Cảm ơn thầy.” Ông đưa cho Huy một túi gạo và một con gà. “Phần thưởng nhỏ.”</p>
+      <p>Huy nhận, nhưng không giữ hết. Anh chia gạo cho bọn trẻ đi theo, và mổ gà nấu cháo mời cả nhóm. “Làm việc cùng nhau, ăn cùng nhau,” anh nói.</p>
+      <p>Tối, ở sân đình, Huy dạy lại bài toán chia ruộng cho bọn trẻ. Anh vẽ một hình bất kỳ lên bảng, hỏi: “Làm sao chia công bằng?” A Sở giơ tay: “Đo trước, tính sau, chia theo tỷ lệ.” Huy gật: “Đúng. Nhưng còn cách nào khác không?”</p>
+      <p>Lý Nhi nói: “Chia theo giá trị. Ruộng gần nước đắt hơn ruộng xa nước.” Huy cười: “Hay. Nhưng khi không có giá rõ ràng, ta dùng diện tích. Và khi diện tích khó đo, ta dùng cách khác: đo chu vi, đo chiều cao, đo góc.”</p>
+      <p>Anh viết lên bảng: “Có nhiều cách giải một bài toán. Quan trọng là chọn cách phù hợp với tình huống.”</p>
+      <p>Đêm, Huy mở sổ: “Bài toán chia ruộng—giải bằng phân số và hình học. Áp dụng: tìm trọng tâm, vẽ góc, đo tam giác. Quan trọng: độ chính xác và sự công bằng. Khi mọi người cùng đo, cùng tính, không ai cãi.” Anh chấm bút. Viên phấn trắng nằm cạnh, như một dấu chấm cuối câu của một bài toán đã giải xong.</p>
+    </article>
+    <nav>
+      <a href="./chuong-11.html">← Chương 11</a>
+      <a href="../index.html">Trang chủ →</a>
+    </nav>
+  </main>
+</body>
+</html>
+
