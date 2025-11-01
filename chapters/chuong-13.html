@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chương 13: Thuật toán trong… đồng ruộng</title>
+  <meta name="description" content="Chương 13: Thuật toán trong… đồng ruộng - Đại Hạ Bất Phàm Nhân." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.75; margin: 0; color: #0f172a; background: #f8fafc; }
+    header { background: #0ea5e9; color: white; padding: 24px 16px; }
+    header h1 { margin: 0; font-size: 26px; }
+    main { max-width: 820px; margin: 24px auto; padding: 0 16px 80px; background: white; border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    article { padding: 20px; }
+    h2 { margin-top: 0; font-size: 22px; color: #0f172a; }
+    p { margin: 14px 0; text-align: justify; }
+    nav { display: flex; justify-content: space-between; gap: 8px; padding: 16px 20px; border-top: 1px solid #e5e7eb; background: #f9fafb; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
+    a { color: #0ea5e9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .breadcrumbs { font-size: 14px; opacity: 0.9; margin-top: 8px; }
+  </style>
+  <link rel="prefetch" href="/Users/huynguyen/HuyStory/chapters/chuong-14.html" />
+</head>
+<body>
+  <header>
+    <h1>Đại Hạ Bất Phàm Nhân</h1>
+    <div class="breadcrumbs"><a href="../index.html">Trang chủ</a> › Chương 13</div>
+  </header>
+  <main>
+    <article>
+      <h2>Chương 13: Thuật toán trong… đồng ruộng</h2>
+      <p>Mùa gặt xong, mùa cấy mới bắt đầu. Nhưng năm nay, dân làng Hạ Khê gặp vấn đề: ruộng nhiều, giống ít, phải chia sao cho đủ lúa giống mà không lãng phí, và phải cấy đúng thời điểm để lúa kịp lớn trước mùa mưa. Lý trưởng Hạ Khê đến nhờ Huy tính toán.</p>
+      <p>“Ta có năm mươi mẫu ruộng, nhưng chỉ có đủ giống cho ba mươi mẫu,” Lý trưởng nói. “Phải chọn ruộng nào để gieo, ruộng nào để hoang, và phải cấy khi nào.”</p>
+      <p>Huy nghĩ ngay đến bài toán tối ưu hóa—một vấn đề quen thuộc trong lập trình. Anh cần tìm cách phân bổ tài nguyên hạn chế để đạt lợi ích tối đa. Nhưng ở đây, “lợi ích” không chỉ là số lượng mà còn là tính an toàn, chất lượng đất, và rủi ro thời tiết.</p>
+      <p>“Trước tiên, ta cần dữ liệu,” Huy nói. “Mỗi thửa ruộng có những đặc điểm gì: gần nước hay xa nước, đất màu mỡ hay cằn cỗi, dễ ngập hay khó ngập, đã cấy mấy mùa liên tiếp.”</p>
+      <p>Anh tổ chức một nhóm gồm bọn trẻ và vài người già có kinh nghiệm, đi khắp ruộng, ghi lại từng đặc điểm. Huy vẽ một bảng trên giấy dó lớn: cột đầu là tên ruộng, các cột sau là điểm số cho từng tiêu chí—gần nước (1-10), màu mỡ (1-10), an toàn lũ (1-10), nghỉ đất (0 hoặc 1).</p>
+      <p>“Đây là một ma trận đánh giá,” Huy giải thích cho A Sở. “Mỗi ruộng có một vector đặc điểm. Ta sẽ dùng vector này để quyết định.”</p>
+      <p>Sau khi thu thập dữ liệu, Huy áp dụng một thuật toán đơn giản: tính tổng điểm cho mỗi ruộng, rồi sắp xếp từ cao xuống thấp. Ruộng nào điểm cao nhất sẽ được ưu tiên gieo giống. Nhưng có một ràng buộc: ruộng nào đã cấy hai mùa liên tiếp phải nghỉ một mùa để đất hồi phục.</p>
+      <p>“Đây là bài toán với ràng buộc,” Huy nói. “Ta không thể chọn tự do, mà phải tuân theo quy tắc. Giống như lập trình: có biến, có hàm, có điều kiện if-else.”</p>
+      <p>Anh vẽ lên bảng một sơ đồ luồng: Bước 1—Lọc ruộng đã nghỉ đủ; Bước 2—Tính điểm cho từng ruộng; Bước 3—Sắp xếp theo điểm; Bước 4—Chọn ba mươi ruộng đầu; Bước 5—Kiểm tra ràng buộc (khoảng cách giữa các ruộng để dễ quản lý); Bước 6—Điều chỉnh nếu cần.</p>
+      <p>Lần đầu tính, có ba ruộng được chọn nhưng quá xa nhau, khó chăm sóc. Huy điều chỉnh thuật toán: thêm ràng buộc nhóm—các ruộng gần nhau được ưu tiên nhóm lại. “Giống như clustering trong machine learning,” anh tự nhủ.</p>
+      <p>Sau khi có danh sách ba mươi ruộng được chọn, Huy tính thời điểm cấy. Anh chia mùa cấy thành ba đợt, mỗi đợt cách nhau mười ngày, để giảm rủi ro: nếu đợt đầu gặp hạn, đợt sau vẫn có cơ hội. Ruộng nào điểm cao, cấy đợt đầu; ruộng nào điểm trung bình, cấy đợt giữa; ruộng nào điểm thấp nhưng cần dùng, cấy đợt cuối.</p>
+      <p>“Đây là phân tán rủi ro,” Huy giải thích. “Không bỏ tất cả trứng vào một giỏ. Chia nhỏ, phân tán thời gian, giảm tổn thất nếu có sự cố.”</p>
+      <p>Lý trưởng nhìn bảng tính, gật gù: “Rõ ràng hơn nhiều so với cách chọn bừa. Nhưng làm sao đảm bảo tính đúng?”</p>
+      <p>Huy cười: “Bằng cách kiểm tra lại. Ta sẽ tính tổng diện tích ba mươi ruộng, đảm bảo đủ giống. Và ta sẽ theo dõi quá trình cấy, ghi lại những gì thực tế khác với dự tính, để năm sau cải thiện.”</p>
+      <p>Công việc cấy bắt đầu. Dân làng làm theo lịch, từng đợt, từng nhóm ruộng. Huy đi kiểm tra, thấy mọi thứ diễn ra đúng như kế hoạch. Nhưng sau đợt đầu, có một vấn đề: một số ruộng gần nước bị ngập nhẹ do mưa sớm. Huy điều chỉnh: đưa những ruộng này xuống đợt sau, thay bằng ruộng cao hơn.</p>
+      <p>“Thuật toán phải linh hoạt,” anh nói với bọn trẻ. “Khi có dữ liệu mới, phải cập nhật. Giống như debug code: phát hiện bug, sửa, test lại.”</p>
+      <p>Tối, ở sân đình, Huy dạy bọn trẻ cách tư duy thuật toán bằng ví dụ thực tế: “Các em muốn chia mười quả táo cho ba người, làm sao công bằng nhất?”</p>
+      <p>A Sở đáp: “Chia đều: mỗi người ba quả, còn một quả cắt làm ba phần.”</p>
+      <p>“Đúng,” Huy nói. “Nhưng nếu một người lớn hơn, cần nhiều hơn, thì sao? Nếu một người nhỏ, ăn ít, thì sao? Ta cần cân nhắc nhiều yếu tố. Đó là thuật toán phức tạp hơn.”</p>
+      <p>Anh vẽ lên bảng: “Thuật toán đơn giản: chia đều. Thuật toán phức tạp: chia theo nhu cầu, theo công sức, theo rủi ro. Càng nhiều biến, càng cần suy nghĩ kỹ.”</p>
+      <p>Cuối mùa cấy, ba mươi ruộng đã được gieo giống đúng thời điểm. Hai mươi ruộng còn lại được để hoang, một số trồng đậu để cải tạo đất, một số để cỏ mọc tự nhiên. Huy ghi lại kết quả: tỷ lệ nảy mầm, thời gian sinh trưởng, và so sánh với các năm trước.</p>
+      <p>“Năm sau, ta sẽ có dữ liệu để cải thiện thuật toán,” anh nói. “Dữ liệu tích lũy càng nhiều, quyết định càng chính xác.”</p>
+      <p>Đêm, Huy mở sổ: “Thuật toán trong đồng ruộng—áp dụng tối ưu hóa, ràng buộc, phân tán rủi ro. Bài học: dữ liệu trước, quyết định sau. Và quan trọng: thuật toán phải linh hoạt, có thể điều chỉnh khi có thông tin mới.”</p>
+      <p>Viên phấn trắng nằm im trên trang giấy, như một dấu chấm sau một hàm đã chạy xong, trả về kết quả mong đợi.</p>
+    </article>
+    <nav>
+      <a href="./chuong-12.html">← Chương 12</a>
+      <a href="./chuong-14.html">Chương 14 →</a>
+    </nav>
+  </main>
+</body>
+</html>
+
