@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chương 21: Lập trình tư duy logic khiến quan huyện kinh ngạc</title>
+  <meta name="description" content="Chương 21: Lập trình tư duy logic khiến quan huyện kinh ngạc - Đại Hạ Bất Phàm Nhân." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.75; margin: 0; color: #0f172a; background: #f8fafc; }
+    header { background: #0ea5e9; color: white; padding: 24px 16px; }
+    header h1 { margin: 0; font-size: 26px; }
+    main { max-width: 820px; margin: 24px auto; padding: 0 16px 80px; background: white; border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    article { padding: 20px; }
+    h2 { margin-top: 0; font-size: 22px; color: #0f172a; }
+    p { margin: 14px 0; text-align: justify; }
+    nav { display: flex; justify-content: space-between; gap: 8px; padding: 16px 20px; border-top: 1px solid #e5e7eb; background: #f9fafb; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
+    a { color: #0ea5e9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .breadcrumbs { font-size: 14px; opacity: 0.9; margin-top: 8px; }
+  </style>
+  <link rel="prefetch" href="/Users/huynguyen/HuyStory/chapters/chuong-22.html" />
+</head>
+<body>
+  <header>
+    <h1>Đại Hạ Bất Phàm Nhân</h1>
+    <div class="breadcrumbs"><a href="../index.html">Trang chủ</a> › Chương 21</div>
+  </header>
+  <main>
+    <article>
+      <h2>Chương 21: Lập trình tư duy logic khiến quan huyện kinh ngạc</h2>
+      <p>Ba ngày trước khi lên đường vào kinh, Tạ Thừa tổ chức một buổi trình diễn cuối cùng ở huyện nha để Huy chứng minh năng lực trước các quan lại và học giả trong huyện. Đây là cơ hội để Huy thể hiện phương pháp của mình, và cũng là cách để Tạ Thừa chứng minh với triều đình rằng việc cử Huy vào kinh là đúng đắn.</p>
+      <p>Trong sảnh đường, ngoài các quan lại của huyện, còn có vài học giả địa phương, một số lý trưởng từ các thôn, và cả học sĩ Văn Tâm—người đã kiểm tra Huy trước đó. Tất cả đều tò mò muốn xem “thầy đồ lạ” này có gì đặc biệt.</p>
+      <p>Tạ Thừa giới thiệu: “Hôm nay, thầy Huy sẽ trình bày về cách nghĩ mới mà thầy đã áp dụng trong đắp đê, dạy học, và cải tiến nông nghiệp. Chúng ta sẽ cùng xem và đặt câu hỏi.”</p>
+      <p>Huy bước lên trước, trải ra một tờ giấy lớn trên bàn. Trên giấy là một sơ đồ luồng—flowchart—mô tả quá trình đắp đê từ đầu đến cuối: bắt đầu, đo đạc, thiết kế, làm mẫu thử, kiểm tra, điều chỉnh, hoàn thành. Mỗi bước được vẽ bằng hình chữ nhật, với mũi tên chỉ hướng, và ký hiệu hình thoi ở các điểm quyết định.</p>
+      <p>“Đây là cách nghĩ của tôi,” Huy nói. “Mỗi công việc phức tạp đều có thể chia thành các bước đơn giản. Mỗi bước có đầu vào và đầu ra. Nếu đầu ra không đúng, ta quay lại bước trước, kiểm tra, sửa, rồi làm lại.”</p>
+      <p>Một học giả địa phương hỏi: “Nhưng làm sao biết bước nào đúng, bước nào sai?”</p>
+      <p>Huy chỉ vào sơ đồ: “Bằng cách kiểm tra sau mỗi bước. Ví dụ, sau khi đo đạc, ta kiểm tra số liệu có hợp lý không. Sau khi thiết kế, ta làm mẫu thử nhỏ, xem có hoạt động không. Sau khi làm một đoạn đê, ta kiểm tra xem có vững không. Nếu không, ta sửa ngay, không đợi đến cuối mới phát hiện lỗi.”</p>
+      <p>“Giống như debug trong lập trình,” Huy nói tiếp, nhưng nhận ra không ai hiểu từ “lập trình”. Anh giải thích: “Giống như khi viết một bài văn, ta viết từng đoạn, đọc lại, sửa, rồi viết đoạn tiếp. Không viết xong cả bài mới sửa.”</p>
+      <p>Văn Tâm cười: “Đây là tư duy logic. Chia nhỏ, kiểm tra từng phần, điều chỉnh kịp thời. Thầy đã áp dụng vào thực tế như thế nào?”</p>
+      <p>Huy kể lại quá trình làm cối xay gió: bắt đầu với ý tưởng, thử làm mô hình, phát hiện lỗi, sửa, thử lại, lại phát hiện lỗi, sửa tiếp. Năm lần thử, năm lần sửa, cuối cùng thành công.</p>
+      <p>“Nếu làm theo cách cũ,” Huy nói, “ta sẽ thiết kế chi tiết trước, rồi làm một lần. Nếu sai, phải làm lại từ đầu, tốn thời gian và vật liệu. Nhưng bằng cách chia nhỏ, làm từng phần, kiểm tra từng phần, ta phát hiện lỗi sớm, sửa ít tốn kém hơn.”</p>
+      <p>Một lý trưởng hỏi: “Nhưng nếu cứ sửa mãi, không bao giờ xong thì sao?”</p>
+      <p>Huy đáp: “Đó là lý do cần có tiêu chí dừng. Ta đặt mục tiêu rõ ràng: cối xay gió phải quay được, xay được lúa, và không tốn quá nhiều gió. Khi đạt được các tiêu chí đó, ta dừng lại, không sửa thêm nữa. Không cần hoàn hảo, chỉ cần đủ tốt.”</p>
+      <p>Tạ Thừa gật: “Thầy nói hay. Quan trọng là biết khi nào dừng.”</p>
+      <p>Huy tiếp tục trình bày về cách áp dụng tư duy logic vào dạy học. Anh vẽ một sơ đồ khác: học trò bắt đầu với câu hỏi, thầy hướng dẫn cách tìm câu trả lời, học trò thử, kiểm tra kết quả, nếu sai thì hỏi lại, thầy hướng dẫn tiếp, học trò thử lại. Đây là vòng lặp học tập—learning loop.</p>
+      <p>“Thầy không chỉ cho đáp án,” Huy nói. “Thầy dạy cách tìm đáp án. Học trò sai không sao, quan trọng là biết vì sao sai, và làm sao để đúng lần sau.”</p>
+      <p>Một học giả hỏi: “Nhưng nếu học trò cứ sai mãi, không học được thì sao?”</p>
+      <p>Huy cười: “Không có ai cứ sai mãi. Nếu sai nhiều lần, có nghĩa là cách dạy chưa phù hợp, hoặc câu hỏi quá khó. Ta phải điều chỉnh: đơn giản hóa câu hỏi, hoặc thay đổi cách dạy. Quan trọng là quan sát, phát hiện vấn đề, điều chỉnh.”</p>
+      <p>Huy còn trình bày về cách áp dụng tư duy logic vào quản lý công việc—Agile và Kanban mà anh đã dùng cho đội đắp đê. Anh giải thích nguyên lý: chia nhỏ công việc, làm từng phần, kiểm tra thường xuyên, điều chỉnh kịp thời.</p>
+      <p>“Điều này khác với cách làm truyền thống,” một quan lại nói. “Truyền thống là lập kế hoạch lớn, làm theo, hoàn thành. Còn cách của thầy là lập kế hoạch nhỏ, làm, kiểm tra, điều chỉnh, lập kế hoạch tiếp theo.”</p>
+      <p>“Đúng,” Huy đáp. “Cả hai cách đều có ích. Cách truyền thống tốt khi việc đơn giản, có thể dự đoán. Cách mới tốt khi việc phức tạp, có nhiều biến số không dự đoán được.”</p>
+      <p>Cuối buổi, Văn Tâm đứng lên: “Thầy Huy đã chứng minh rằng tư duy logic không chỉ là lý thuyết, mà có thể áp dụng vào thực tế. Vào kinh, thầy sẽ gặp nhiều người thách đố. Nhưng nếu giữ được tư duy này—chia nhỏ, kiểm tra, điều chỉnh—thầy sẽ vượt qua được.”</p>
+      <p>Tạ Thừa cũng đứng lên: “Ta tin thầy sẽ làm tốt. Và ta hy vọng những phương pháp này sẽ được áp dụng rộng rãi, không chỉ ở huyện ta, mà trên toàn quốc.”</p>
+      <p>Sau buổi trình diễn, Huy cảm thấy tự tin hơn. Anh đã chứng minh được năng lực, và đã được công nhận. Giờ chỉ còn lên đường và đối mặt với thử thách ở kinh thành.</p>
+      <p>Đêm, Huy mở sổ, viết: “Đã trình bày tư duy logic trước các quan lại và học giả—thành công. Bài học: tư duy logic không phải là thứ trừu tượng, mà là công cụ thực tế. Chia nhỏ, kiểm tra, điều chỉnh—nguyên lý này có thể áp dụng ở bất cứ đâu.”</p>
+      <p>Anh nhìn viên phấn trắng. Nó đã theo anh từ giảng đường đến huyện đường, và sắp đến kinh thành. Mỗi nơi, anh đều dùng nó để vẽ, để giải thích, để dạy. Phấn trắng không phải chỉ là công cụ, mà còn là biểu tượng của sứ mệnh: truyền đạt kiến thức, mở mang tư duy.</p>
+    </article>
+    <nav>
+      <a href="./chuong-20.html">← Chương 20</a>
+      <a href="./chuong-22.html">Chương 22 →</a>
+    </nav>
+  </main>
+</body>
+</html>
+
