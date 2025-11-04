@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chương 26: Bài giảng về mô hình cây quyết định</title>
+  <meta name="description" content="Chương 26: Bài giảng về mô hình cây quyết định - Đại Hạ Bất Phàm Nhân." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.75; margin: 0; color: #0f172a; background: #f8fafc; }
+    header { background: #0ea5e9; color: white; padding: 24px 16px; }
+    header h1 { margin: 0; font-size: 26px; }
+    main { max-width: 820px; margin: 24px auto; padding: 0 16px 80px; background: white; border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    article { padding: 20px; }
+    h2 { margin-top: 0; font-size: 22px; color: #0f172a; }
+    p { margin: 14px 0; text-align: justify; }
+    nav { display: flex; justify-content: space-between; gap: 8px; padding: 16px 20px; border-top: 1px solid #e5e7eb; background: #f9fafb; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
+    a { color: #0ea5e9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .breadcrumbs { font-size: 14px; opacity: 0.9; margin-top: 8px; }
+  </style>
+  <link rel="prefetch" href="/Users/huynguyen/HuyStory/chapters/chuong-25.html" />
+</head>
+<body>
+  <header>
+    <h1>Đại Hạ Bất Phàm Nhân</h1>
+    <div class="breadcrumbs"><a href="../index.html">Trang chủ</a> › Chương 26</div>
+  </header>
+  <main>
+    <article>
+      <h2>Chương 26: Bài giảng về mô hình cây quyết định</h2>
+      <p>Ngày thứ sáu trên đường, khi đoàn người dừng lại nghỉ trưa dưới một gốc cây lớn, A Sở hỏi Huy: “Thầy, em nghe thầy nói về ‘cây quyết định’ khi dạy ở sân đình. Đó là gì vậy?”</p>
+      <p>Huy mỉm cười. “Đó là một cách nghĩ để ra quyết định. Thầy sẽ dạy em ngay.” Anh lấy viên phấn trắng, vẽ lên nền đất một hình cây đơn giản: một gốc ở dưới, một thân ở giữa, các nhánh chia ra.</p>
+      <p>“Giả sử em muốn quyết định: nên đi đường nào để đến kinh thành nhanh nhất,” Huy nói. “Em sẽ bắt đầu từ gốc cây—đó là câu hỏi: ‘Đi đường nào?’ Từ gốc, có các nhánh: đường lớn, đường nhỏ, đường tắt. Mỗi nhánh có điều kiện: đường lớn xa nhưng bằng phẳng, đường nhỏ gần nhưng gồ ghề, đường tắt ngắn nhưng có thể nguy hiểm.”</p>
+      <p>A Sở nhìn chăm chú vào hình cây. “Rồi sao nữa?”</p>
+      <p>“Từ mỗi nhánh, lại có các nhánh nhỏ hơn,” Huy tiếp tục vẽ. “Ví dụ, từ nhánh ‘đường lớn’, có các nhánh: thời tiết tốt, thời tiết xấu. Nếu thời tiết tốt, đi đường lớn. Nếu thời tiết xấu, có thể đi đường nhỏ. Mỗi nhánh dẫn đến một quyết định cuối cùng.”</p>
+      <p>Huy chỉ vào hình cây: “Nhìn vào đây, em thấy được tất cả các lựa chọn, tất cả các điều kiện, và tất cả các kết quả. Từ đó, em có thể chọn con đường tốt nhất dựa trên tình huống hiện tại.”</p>
+      <p>“Nhưng làm sao biết con đường nào tốt nhất?” A Sở hỏi.</p>
+      <p>“Bằng cách đánh giá từng nhánh,” Huy nói. “Em đặt điểm cho từng nhánh: đường lớn—điểm 8 về tốc độ, điểm 7 về an toàn. Đường nhỏ—điểm 6 về tốc độ, điểm 8 về an toàn. Đường tắt—điểm 9 về tốc độ, điểm 4 về an toàn. Tùy vào em coi trọng tốc độ hay an toàn, em sẽ chọn khác nhau.”</p>
+      <p>Trương Hộ và Lâm cũng tò mò, đến xem. Huy giải thích cho họ bằng ví dụ thực tế: “Ví dụ, các anh muốn quyết định: nên đắp đê ở chỗ nào? Có ba chỗ: chỗ A gần nước nhưng đất yếu, chỗ B xa nước nhưng đất chắc, chỗ C ở giữa. Các anh vẽ cây quyết định, đánh giá từng chỗ, rồi chọn.”</p>
+      <p>Trương Hộ gật: “Hay. Nhìn vào cây, thấy được tất cả, không bỏ sót.”</p>
+      <p>“Đúng. Đó là ưu điểm của cây quyết định—nhìn thấy được toàn bộ, không bỏ sót lựa chọn nào. Và quan trọng, nó giúp em suy nghĩ có hệ thống, không bị rối.”</p>
+      <p>Huy còn dạy A Sở cách vẽ cây quyết định cho các vấn đề khác: nên trồng lúa hay đậu? Nên làm nhà ở đâu? Nên học cái gì trước? Mỗi vấn đề, A Sở vẽ một cây, suy nghĩ, rồi quyết định.</p>
+      <p>“Cây quyết định không chỉ để ra quyết định,” Huy nói. “Mà còn để giải thích quyết định. Khi em vẽ cây, em có thể giải thích cho người khác: vì sao em chọn cái này, không chọn cái kia. Đó là cách nghĩ minh bạch.”</p>
+      <p>Buổi tối, A Sở ngồi lại một mình, vẽ một cây quyết định cho chính mình: nên học gì khi quay lại thôn? Có các nhánh: học chữ, học số, học cách làm việc. Từ mỗi nhánh, lại có các nhánh nhỏ: học chữ để làm gì? Để đọc sách, để viết thư, để ghi chép. Cậu nhìn vào cây, suy nghĩ, rồi quyết định: sẽ học cả ba, nhưng ưu tiên học cách làm việc trước, vì đó là thứ cần thiết nhất.</p>
+      <p>Huy nhìn A Sở vẽ cây, mỉm cười. Cậu đã hiểu được nguyên lý, và đã biết áp dụng. Đó là dấu hiệu của một người học tốt—không chỉ hiểu, mà còn dùng được.</p>
+      <p>“A Sở, em thấy cây quyết định có ích không?” Huy hỏi.</p>
+      <p>“Có ích lắm,” A Sở đáp. “Nhìn vào cây, em thấy rõ ràng hơn. Không còn bối rối nữa.”</p>
+      <p>“Đúng. Và đó là mục đích—giúp em nghĩ rõ ràng hơn, ra quyết định tốt hơn. Khi về thôn, em có thể dạy cho các bạn em.”</p>
+      <p>Đêm, Huy mở sổ, viết: “Đã dạy A Sở về cây quyết định—thành công. Cậu đã hiểu và áp dụng được. Đây là một công cụ mạnh mẽ, có thể dùng cho nhiều vấn đề. Vào kinh, sẽ trình bày như một phương pháp ra quyết định có hệ thống.”</p>
+      <p>Anh nhìn viên phấn trắng, nghĩ đến những cây quyết định đã vẽ—cây về đắp đê, cây về dạy học, cây về cách sống. Mỗi cây là một cách nghĩ, một cách ra quyết định. Và đó là điều mà Huy muốn truyền đạt—không phải chỉ là kiến thức, mà là cách nghĩ, cách ra quyết định.</p>
+    </article>
+    <nav>
+      <a href="./chuong-25.html">← Chương 25</a>
+      <a href="../index.html">Trang chủ →</a>
+    </nav>
+  </main>
+</body>
+</html>
+
